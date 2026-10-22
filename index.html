@@ -12,68 +12,123 @@
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebSite", "name": "SousVideQue", "url": "https://sousvideque.net/"}, {"@context": "https://schema.org", "@type": "Organization", "name": "SousVideQue", "url": "https://sousvideque.net/", "logo": "https://sousvideque.net/images/hero.jpg", "sameAs": ["https://www.youtube.com/channel/UCR07zdfLHMdb0ejEJ_gkJZA"]}]</script>
 <style>
-:root{--bg:#141110;--card:#1f1a17;--ink:#f3ece4;--mute:#b9aea3;--ember:#e0662b;--line:#3a302a}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
-a{color:var(--ember)}img{max-width:100%;height:auto;display:block}
-.wrap{max-width:960px;margin:0 auto;padding:0 18px}
-header.top{padding:14px 0;border-bottom:1px solid var(--line)}header.top .wrap{display:flex;justify-content:space-between;align-items:center}
-.logo{font-weight:800;letter-spacing:.5px;font-size:20px;color:var(--ink);text-decoration:none}.logo span{color:var(--ember)}
-nav a{color:var(--mute);text-decoration:none;margin-left:14px;font-size:14px}
-.hero{position:relative;min-height:78vh;display:flex;align-items:flex-end;background:#000 url(images/hero.jpg) center 40%/cover}
-.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(transparent 20%,rgba(10,8,7,.92))}
-.hero .wrap{position:relative;padding-bottom:42px}
-h1{font-size:clamp(34px,8vw,64px);line-height:1.05;margin:0 0 10px}h2{font-size:26px;margin:0 0 12px}
-.lead{font-size:18px;color:var(--mute);max-width:560px}
-.btn{display:inline-block;background:var(--ember);color:#fff;text-decoration:none;font-weight:700;padding:12px 18px;border-radius:8px;margin:8px 8px 0 0}
-.btn.ghost{background:transparent;border:1px solid var(--ember);color:var(--ember)}
-section{padding:46px 0;border-bottom:1px solid var(--line)}
-.steps{display:grid;gap:14px}.step{background:var(--card);border-radius:10px;padding:16px}.step b{color:var(--ember)}
-.grid{display:grid;gap:14px;grid-template-columns:1fr 1fr}
-.short{background:var(--card);border-radius:10px;overflow:hidden;text-decoration:none;color:var(--ink)}
-.short img{aspect-ratio:9/12;object-fit:cover;width:100%}.short div{padding:10px 12px;font-weight:600;font-size:15px}
-.tlist{list-style:none;padding:0;margin:16px 0 0}.tlist li{border-bottom:1px solid var(--line)}.tlist a{display:block;padding:10px 0;text-decoration:none}
-.card{display:grid;gap:18px;background:var(--card);border-radius:12px;padding:18px;align-items:center}
-.card img{border-radius:10px;aspect-ratio:4/5;object-fit:cover}
-.note{background:#1d1714;border-left:4px solid var(--ember);padding:14px 16px;border-radius:6px;color:var(--mute)}
-footer{padding:28px 0 40px;color:var(--mute);font-size:14px}
-@media(min-width:720px){.steps{grid-template-columns:repeat(3,1fr)}.grid{grid-template-columns:repeat(4,1fr)}.card{grid-template-columns:260px 1fr}}
+:root{--bg:#0d0a09;--bg2:#15100d;--card:#1d1613;--ink:#f6eee6;--mute:#b9aca0;--ember:#ff6a1f;--gold:#ffb347;--line:#3a2c24}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;overflow-x:hidden}
+a{color:var(--gold)}img{max-width:100%;display:block}.wrap{max-width:1160px;margin:0 auto;padding:0 22px}
+header.top{position:fixed;inset:0 0 auto;z-index:20;background:#0d0a09cc;backdrop-filter:blur(10px);border-bottom:1px solid #ffffff12}
+header.top .wrap{display:flex;align-items:center;height:62px;gap:18px}.logo{font-weight:900;font-size:21px;color:var(--ink);text-decoration:none}.logo span{color:var(--ember)}
+nav{margin-left:auto;display:flex;gap:18px;align-items:center}nav a{color:var(--mute);text-decoration:none;font-size:14px}nav a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:999px;font-weight:800;text-decoration:none;transition:transform .2s,box-shadow .2s}
+.btn.p{background:linear-gradient(135deg,var(--gold),var(--ember));color:#1a0d05;box-shadow:0 8px 30px #ff6a1f55}.btn.p:hover{transform:translateY(-2px);box-shadow:0 12px 40px #ff6a1f88}
+.btn.g{border:1px solid #ffffff33;color:var(--ink)}.btn.sm{padding:8px 15px;font-size:13px}
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden;background:#000 url(images/hero.jpg) center 45%/cover}
+.hero:before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 25% 55%,#0d0a09aa,#0d0a09f2 70%),linear-gradient(transparent 60%,var(--bg))}
+#embers{position:absolute;inset:0;width:100%;height:100%;z-index:1}.hero .wrap{position:relative;z-index:2;padding-top:80px}
+.eyebrow{display:inline-block;font:700 12px/1 ui-monospace,monospace;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);padding:8px 14px;border:1px solid #ffb34755;border-radius:999px;background:#ffb34712}
+h1{font-size:clamp(44px,8vw,96px);line-height:.98;margin:18px 0 16px;letter-spacing:-.02em}
+h1 .hot{background:linear-gradient(90deg,var(--gold),var(--ember),#ff3d1f);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{font-size:19px;color:var(--mute);max-width:600px}.ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+section{padding:90px 0;border-bottom:1px solid var(--line)}h2{font-size:clamp(30px,4vw,46px);line-height:1.1;margin:0 0 14px;letter-spacing:-.01em}
+.kick{font:700 12px/1 ui-monospace,monospace;letter-spacing:.16em;text-transform:uppercase;color:var(--ember);margin-bottom:12px}
+.story{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}.story img{border-radius:20px;aspect-ratio:4/5;object-fit:cover;box-shadow:0 30px 80px #000a}
+.story p{color:var(--mute);font-size:17px}.story strong{color:var(--ink)}
+.line{background:linear-gradient(180deg,var(--bg),var(--bg2))}.belt{position:relative;margin-top:40px;display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+.belt:before{content:"";position:absolute;left:4%;right:4%;top:52px;height:4px;border-radius:4px;background:repeating-linear-gradient(90deg,var(--line) 0 18px,#5a4033 18px 36px);animation:belt 1.2s linear infinite}
+@keyframes belt{to{background-position:36px 0}}
+.st{position:relative;text-align:center}.st .ic{width:104px;height:104px;margin:0 auto 14px;border-radius:50%;display:grid;place-items:center;font-size:44px;background:var(--card);border:2px solid var(--line);position:relative;z-index:1;animation:glow 6s infinite}
+.st:nth-child(2) .ic{animation-delay:1s}.st:nth-child(3) .ic{animation-delay:2s}.st:nth-child(4) .ic{animation-delay:3s}.st:nth-child(5) .ic{animation-delay:4s}.st:nth-child(6) .ic{animation-delay:5s}
+@keyframes glow{0%,12%{border-color:var(--ember);box-shadow:0 0 40px #ff6a1f88;transform:scale(1.08)}20%,100%{border-color:var(--line);box-shadow:none;transform:none}}
+.st b{display:block;font-size:17px}.st span{color:var(--mute);font-size:14px}
+.pair{display:flex;flex-wrap:wrap;gap:10px;margin-top:36px;justify-content:center}.pair a{padding:9px 16px;border:1px solid var(--line);border-radius:999px;text-decoration:none;color:var(--ink);background:var(--card);font-size:14px}.pair a i{color:var(--ember);font-style:normal}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:34px}.stat{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px}
+.stat .n{font-size:46px;font-weight:900;color:var(--gold);line-height:1}.stat small{display:block;color:var(--mute);margin-top:8px;font-size:13px}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(4,1fr);margin-top:30px}
+.short{position:relative;background:var(--card);border-radius:16px;overflow:hidden;text-decoration:none;color:var(--ink);border:1px solid var(--line);transition:transform .25s,border-color .25s}
+.short:hover{transform:translateY(-4px);border-color:var(--ember)}.short img{aspect-ratio:9/16;object-fit:cover;width:100%}
+.short .play{position:absolute;top:12px;right:12px;width:36px;height:36px;border-radius:50%;background:#000a;display:grid;place-items:center;font-size:13px}
+.short div{padding:11px 13px;font-weight:700;font-size:15px}.short em{color:var(--ember);font-style:normal;font-size:12px;margin-right:4px}
+.gear{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:26px}.g{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
+.g b{display:block;font-size:18px;margin-bottom:6px}.g span{color:var(--mute);font-size:14px}.disc{color:var(--mute);font-size:14px;margin-top:18px}
+.card{display:grid;grid-template-columns:280px 1fr;gap:28px;background:var(--card);border-radius:20px;padding:24px;align-items:center;border:1px solid var(--line)}.card img{border-radius:14px;aspect-ratio:4/5;object-fit:cover}
+.note{background:#1d1714;border-left:4px solid var(--ember);padding:14px 18px;border-radius:8px;color:var(--mute)}
+#safety h2{font-size:28px}
+.cta{text-align:center;background:radial-gradient(ellipse at 50% 120%,#ff6a1f33,transparent 60%)}.cta .lead{margin:0 auto}
+footer{padding:36px 0 48px;color:var(--mute);font-size:14px}footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px}footer a{color:var(--mute)}
+@media(max-width:860px){nav a:not(.btn){display:none}.story,.card{grid-template-columns:1fr}.belt{grid-template-columns:repeat(3,1fr);row-gap:30px}.belt:before{display:none}.grid{grid-template-columns:repeat(2,1fr)}.gear,.stats{grid-template-columns:1fr}section{padding:64px 0}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}#embers{display:none}}
 </style></head><body>
 <header class="top"><div class="wrap"><a class="logo" href="#">SousVide<span>Que</span></a>
-<nav><a href="#shorts">Shorts</a><a href="#turkey">Turkey card</a><a href="#safety">Safety</a></nav></div></header>
+<nav><a href="#line">The method</a><a href="#shorts">Shorts</a><a href="#gear">Gear</a><a href="#turkey">Turkey card</a><a href="#safety">Safety</a><a class="btn p sm" href="https://www.youtube.com/channel/UCR07zdfLHMdb0ejEJ_gkJZA?sub_confirmation=1" rel="noopener">Subscribe</a></nav></div></header>
 
-<div class="hero"><div class="wrap">
-<h1>Bath first,<br>bark second.</h1>
-<p class="lead">Sous vide for tenderness. Fire for the crust. Short videos, no fluff.</p>
-<a class="btn" href="https://www.youtube.com/channel/UCR07zdfLHMdb0ejEJ_gkJZA" rel="noopener">Watch on YouTube</a>
-<a class="btn ghost" href="#turkey">Free turkey card</a>
+<div class="hero"><canvas id="embers" aria-hidden="true"></canvas><div class="wrap">
+<span class="eyebrow">Sous vide &times; BBQ &middot; YouTube Shorts</span>
+<h1>Bath first.<br><span class="hot">Bark second.</span></h1>
+<p class="lead">Water bath for edge-to-edge tenderness. Fire for the crust. One idea per Short, no fluff. (Bark = the dark, flavorful crust on meat. No dogs involved.)</p>
+<div class="ctas"><a class="btn p" href="https://www.youtube.com/channel/UCR07zdfLHMdb0ejEJ_gkJZA?sub_confirmation=1" rel="noopener">&#9654; Subscribe on YouTube</a><a class="btn g" href="#shorts">Watch the Shorts</a></div>
 </div></div>
 
-<section id="about"><div class="wrap">
-<h2>What SousVideQue is</h2>
-<p class="lead">A faceless short-form cooking channel. Every video is one idea: cook it gently in a water bath, then finish it hot on the grill, in a pan, or in smoke to build bark. (Bark here means the dark, flavorful crust on meat - no dogs involved.)</p>
-<div class="steps">
-<div class="step"><b>1. Bath</b><br>Precise water-bath cook for even doneness edge to edge.</div>
-<div class="step"><b>2. Dry</b><br>Pat it dry. A wet surface steams instead of browning.</div>
-<div class="step"><b>3. Bark</b><br>Grill, sear or smoke for color, crust and flavor.</div>
-</div></div></section>
+<section id="about"><div class="wrap story">
+<div><div class="kick">The story</div><h2>Two cooks, one steak.</h2>
+<p>Sous vide is precise but pale. A ripping-hot grill is gorgeous but easy to overshoot. <strong>SousVideQue puts them in order.</strong> The bath handles the inside; the fire handles the outside.</p>
+<p>Every Short is one rule in the same shape: <strong>X first, Y second.</strong> Bath first, salt second. Sear first, slice second. Pan first, torch second. Learn the order, and the cook gets a lot calmer.</p>
+<p>A faceless short-form channel. Some visuals and narration are AI-generated.</p></div>
+<img src="images/skillet-sear.jpg" alt="Steak searing in a cast iron skillet" loading="lazy" width="600" height="1067">
+</div></section>
+
+<section id="line" class="line"><div class="wrap">
+<div class="kick">The cook line</div><h2>X first, Y second, all the way down the line.</h2>
+<p class="lead">Every SousVideQue cook moves through the same stations. Each Short zooms in on one handoff.</p>
+<div class="belt">
+<div class="st"><div class="ic">&#129385;</div><b>Raw</b><span>Season and seal</span></div>
+<div class="st"><div class="ic">&#9832;</div><b>Bath</b><span>Hold at your target temp</span></div>
+<div class="st"><div class="ic">&#10052;</div><b>Chill &amp; dry</b><span>Pat it dry. Wet steams.</span></div>
+<div class="st"><div class="ic">&#128293;</div><b>Sear / torch</b><span>Build the bark</span></div>
+<div class="st"><div class="ic">&#128298;</div><b>Slice</b><span>After the sear</span></div>
+<div class="st"><div class="ic">&#127869;</div><b>Plate</b><span>Eat</span></div>
+</div>
+<div class="pair"><a href="https://www.youtube.com/shorts/2OESnoj9EeA" rel="noopener">Bath first, <i>salt second</i></a><a href="https://www.youtube.com/shorts/Q1us8dBg800" rel="noopener">Chill before you <i>sear</i></a><a href="https://www.youtube.com/shorts/BdxjeA6nNAM" rel="noopener">Oil first, <i>butter second</i></a><a href="https://www.youtube.com/shorts/G1lmrcM81B0" rel="noopener">Pan first, <i>torch second</i></a><a href="https://www.youtube.com/shorts/hqwUf0E_Dmo" rel="noopener">Sear first, <i>slice second</i></a></div>
+</div></section>
 
 <section id="shorts"><div class="wrap">
-<h2>Latest Shorts</h2>
-<div class="grid">
-<a class="short" href="https://www.youtube.com/shorts/2OESnoj9EeA" rel="noopener"><img src="images/skillet-sear.jpg" alt="Steak searing in a cast iron skillet" loading="lazy" width="600" height="1067"><div>Bath first, salt second</div></a>
-<a class="short" href="https://www.youtube.com/shorts/-Ft9mFxTLW4" rel="noopener"><img src="images/turkey.jpg" alt="Poultry finishing over glowing coals" loading="lazy" width="600" height="1067"><div>Bath first, coals second</div></a>
-<a class="short" href="https://www.youtube.com/shorts/dVtjAnTZMi4" rel="noopener"><img src="images/butter-baste.jpg" alt="Steak basted with butter in a pan" loading="lazy" width="600" height="1067"><div>Low first, hot second</div></a>
-<a class="short" href="https://www.youtube.com/shorts/y6Wg_t__YoY" rel="noopener"><img src="images/hero.jpg" alt="Sliced steak with a dark crust" loading="lazy" width="900" height="1600"><div>Pat dry or no bark</div></a>
+<div class="kick">Shorts showcase</div><h2>Fresh off the grill.</h2>
+<p class="lead">Tap any card to watch on YouTube.</p>
+<div class="stats">
+<div class="stat"><div class="n" data-count="11">0</div><small>Shorts linked on this page (each checked live via YouTube oEmbed, Oct 21, 2026)</small></div>
+<div class="stat"><div class="n" data-count="6">0</div><small>Stations on the cook line above</small></div>
+<div class="stat"><div class="n" data-count="1">0</div><small>Rule per Short: X first, Y second</small></div>
 </div>
-<ul class="tlist"><li><a href="https://www.youtube.com/shorts/U_aRcyfLJOg" rel="noopener">Bath first, pull second &rarr;</a></li>
-<li><a href="https://www.youtube.com/channel/UCR07zdfLHMdb0ejEJ_gkJZA" rel="noopener">See every Short on the channel &rarr;</a></li></ul>
+<div class="grid">
+<a class="short" href="https://www.youtube.com/shorts/G1lmrcM81B0" rel="noopener"><img src="https://i.ytimg.com/vi/G1lmrcM81B0/oar2.jpg" alt="Thumbnail: Pan first, torch second" loading="lazy" width="540" height="960"><span class="play">&#9654;</span><div><em>S19</em> Pan first, torch second</div></a>
+<a class="short" href="https://www.youtube.com/shorts/hqwUf0E_Dmo" rel="noopener"><img src="https://i.ytimg.com/vi/hqwUf0E_Dmo/oar2.jpg" alt="Thumbnail: Sear first, slice second" loading="lazy" width="540" height="960"><span class="play">&#9654;</span><div><em>S18</em> Sear first, slice second</div></a>
+<a class="short" href="https://www.youtube.com/shorts/2OESnoj9EeA" rel="noopener"><img src="https://i.ytimg.com/vi/2OESnoj9EeA/oar2.jpg" alt="Thumbnail: Bath first, salt second" loading="lazy" width="540" height="960"><span class="play">&#9654;</span><div><em>S17</em> Bath first, salt second</div></a>
+<a class="short" href="https://www.youtube.com/shorts/BdxjeA6nNAM" rel="noopener"><img src="https://i.ytimg.com/vi/BdxjeA6nNAM/oar2.jpg" alt="Thumbnail: Oil first, butter second" loading="lazy" width="540" height="960"><span class="play">&#9654;</span><div>Oil first, butter second</div></a>
+<a class="short" href="https://www.youtube.com/shorts/MbwROhScSfY" rel="noopener"><img src="https://i.ytimg.com/vi/MbwROhScSfY/oar2.jpg" alt="Thumbnail: Bath first, bark second (Part 2: chicken thighs)" loading="lazy" width="540" height="960"><span class="play">&#9654;</span><div>Bath first, bark second (Part 2: chicken thighs)</div></a>
+<a class="short" href="https://www.youtube.com/shorts/v-MkTfmo6E0" rel="noopener"><img src="https://i.ytimg.com/vi/v-MkTfmo6E0/oar2.jpg" alt="Thumbnail: Rub after the dry" loading="lazy" width="540" height="960"><span class="play">&#9654;</span><div>Rub after the dry</div></a>
+<a class="short" href="https://www.youtube.com/shorts/Q1us8dBg800" rel="noopener"><img src="https://i.ytimg.com/vi/Q1us8dBg800/oar2.jpg" alt="Thumbnail: Chill before you sear" loading="lazy" width="540" height="960"><span class="play">&#9654;</span><div>Chill before you sear</div></a>
+<a class="short" href="https://www.youtube.com/shorts/y6Wg_t__YoY" rel="noopener"><img src="https://i.ytimg.com/vi/y6Wg_t__YoY/oar2.jpg" alt="Thumbnail: Pat dry or no bark" loading="lazy" width="540" height="960"><span class="play">&#9654;</span><div>Pat dry or no bark</div></a>
+<a class="short" href="https://www.youtube.com/shorts/-Ft9mFxTLW4" rel="noopener"><img src="https://i.ytimg.com/vi/-Ft9mFxTLW4/oar2.jpg" alt="Thumbnail: Bath first, coals second" loading="lazy" width="540" height="960"><span class="play">&#9654;</span><div>Bath first, coals second</div></a>
+<a class="short" href="https://www.youtube.com/shorts/dVtjAnTZMi4" rel="noopener"><img src="https://i.ytimg.com/vi/dVtjAnTZMi4/oar2.jpg" alt="Thumbnail: Low first, hot second" loading="lazy" width="540" height="960"><span class="play">&#9654;</span><div>Low first, hot second</div></a>
+<a class="short" href="https://www.youtube.com/shorts/U_aRcyfLJOg" rel="noopener"><img src="https://i.ytimg.com/vi/U_aRcyfLJOg/oar2.jpg" alt="Thumbnail: Bath first, pull second" loading="lazy" width="540" height="960"><span class="play">&#9654;</span><div>Bath first, pull second</div></a>
+</div>
+<p style="margin-top:22px"><a href="https://www.youtube.com/channel/UCR07zdfLHMdb0ejEJ_gkJZA/shorts" rel="noopener">See every Short on the channel &rarr;</a></p>
+</div></section>
+
+<section id="gear"><div class="wrap">
+<div class="kick">Gear from the Shorts</div><h2>What&rsquo;s in &ldquo;Pan first, torch second.&rdquo;</h2>
+<p class="lead">The same three links pinned on that Short.</p>
+<div class="gear">
+<a class="g" href="https://www.amazon.com/dp/B00006JSUB?tag=sousvideque-20" rel="sponsored noopener"><b>Cast iron skillet</b><span>View on Amazon &rarr;</span></a>
+<a class="g" href="https://www.amazon.com/dp/B0019CQL60?tag=sousvideque-20" rel="sponsored noopener"><b>Searing torch head</b><span>View on Amazon &rarr;</span></a>
+<a class="g" href="https://www.amazon.com/dp/B07XXSYLL8?tag=sousvideque-20" rel="sponsored noopener"><b>Instant-read probe thermometer</b><span>View on Amazon &rarr;</span></a>
+</div>
+<p class="disc">As an Amazon Associate I earn from qualifying purchases.</p>
 </div></section>
 
 <section id="turkey"><div class="wrap">
 <div class="card"><img src="images/turkey.jpg" alt="Turkey breast finishing on a grill" loading="lazy" width="600" height="1067">
-<div><h2>Free Thanksgiving turkey card</h2>
+<div><div class="kick">Free download</div><h2>Free Thanksgiving turkey card</h2>
 <p>A one-page time and temp card for a bath-first, smoke-second turkey. Free to view and print. No sign-up.</p>
-<a class="btn" href="https://drive.google.com/file/d/10B8iuLqzNC-IoKp2VOxOk2RNiYpRp1fo/view" rel="noopener">Open the turkey card</a></div></div>
+<a class="btn p" href="https://drive.google.com/file/d/10B8iuLqzNC-IoKp2VOxOk2RNiYpRp1fo/view" rel="noopener">Open the turkey card</a></div></div>
 </div></section>
 
 <section id="safety"><div class="wrap">
@@ -84,8 +139,25 @@ footer{padding:28px 0 40px;color:var(--mute);font-size:14px}
 <p>This page is general information, not professional food-safety advice.</p></div>
 </div></section>
 
+
+<section class="cta"><div class="wrap">
+<h2>Get the next rule before your next cook.</h2>
+<p class="lead">New Shorts land on the channel. Subscribe and keep the bark coming.</p>
+<div class="ctas" style="justify-content:center"><a class="btn p" href="https://www.youtube.com/channel/UCR07zdfLHMdb0ejEJ_gkJZA?sub_confirmation=1" rel="noopener">&#9654; Subscribe to @SousVideQue</a><a class="btn g" href="#turkey">Free turkey card</a></div>
+</div></section>
+
 <footer><div class="wrap">
-<p>Some visuals and narration are AI-generated.</p>
-<p>Designed-by: SousVideQue &middot; &copy; 2026 SousVideQue</p>
+<div><b style="color:var(--ink)">SousVide<span style="color:var(--ember)">Que</span></b><br>Some visuals and narration are AI-generated.<br>Designed-by: SousVideQue &middot; &copy; 2026 SousVideQue</div>
+<div><a href="https://www.youtube.com/channel/UCR07zdfLHMdb0ejEJ_gkJZA" rel="noopener">YouTube</a> &middot; <a href="#safety">Food-safety note</a> &middot; <a href="#gear">Associate disclosure</a></div>
 </div></footer>
+<script>
+(()=>{const c=document.getElementById('embers'),x=c.getContext('2d');let W,H,P=[];
+function r(){W=c.width=c.offsetWidth*devicePixelRatio;H=c.height=c.offsetHeight*devicePixelRatio}r();addEventListener('resize',r);
+function n(){return{x:Math.random()*W,y:H+Math.random()*H*.3,v:(.4+Math.random()*1.4)*devicePixelRatio,s:(1+Math.random()*2.6)*devicePixelRatio,w:Math.random()*6.28,l:1}}
+for(let i=0;i<110;i++){const p=n();p.y=Math.random()*H;P.push(p)}
+(function f(){x.clearRect(0,0,W,H);for(const p of P){p.y-=p.v;p.w+=.03;p.x+=Math.sin(p.w)*.6;p.l=p.y/H;if(p.y<0)Object.assign(p,n());
+x.beginPath();x.arc(p.x,p.y,p.s,0,7);x.fillStyle=`rgba(255,${110+p.l*80|0},40,${.25+p.l*.7})`;x.shadowBlur=12;x.shadowColor='#ff6a1f';x.fill()}requestAnimationFrame(f)})();
+const io=new IntersectionObserver(e=>e.forEach(t=>{if(!t.isIntersecting)return;const el=t.target,to=+el.dataset.count;let i=0;const s=setInterval(()=>{el.textContent=++i;if(i>=to)clearInterval(s)},Math.max(30,600/to));io.unobserve(el)}));
+document.querySelectorAll('[data-count]').forEach(e=>io.observe(e));})();
+</script>
 </body></html>
