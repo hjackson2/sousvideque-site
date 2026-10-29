@@ -160,4 +160,5 @@ x.beginPath();x.arc(p.x,p.y,p.s,0,7);x.fillStyle=`rgba(255,${110+p.l*80|0},40,${
 const io=new IntersectionObserver(e=>e.forEach(t=>{if(!t.isIntersecting)return;const el=t.target,to=+el.dataset.count;let i=0;const s=setInterval(()=>{el.textContent=++i;if(i>=to)clearInterval(s)},Math.max(30,600/to));io.unobserve(el)}));
 document.querySelectorAll('[data-count]').forEach(e=>io.observe(e));})();
 </script>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "2925ec942a8d446daf448a9c0da99a35"}'></script><!-- End Cloudflare Web Analytics -->
 </body></html>
